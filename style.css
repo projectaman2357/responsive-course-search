@@ -1,0 +1,386 @@
+  
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+/* Search box styles */
+.search-box {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.search-box input {
+    padding: 0.5rem;
+    border: 5px solid #ccc;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 1000px;
+}
+
+.search-box button {
+    padding: 0.5rem 1rem;
+    background-color: #FF5733;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-box button:hover {
+    background-color: #E04F23;
+}
+
+/* ... Other CSS ... */
+
+
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation styles */
+/* home java pyhon all courses styling here*/
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: forestgreen;
+    padding: 1rem 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+
+    .image{
+        size: 0ch;
+    }}
+
+ul {
+    position: relative;
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+
+}
+ul:before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    height: 6px;
+    width: 0;
+    background: #4070f4;
+    border-radius: 50px;
+    transition: width 0.3s ease;
+
+}
+ul:hover:before {
+    width: 100%;
+}
+
+.righthome{
+    margin-top: 10px;
+    text-align: center;
+    border-left:7px solid #95cc97;
+    background: #f6f9ee;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+
+
+
+.h3{
+    font-size: 21px;
+}
+
+.h3, .h4{
+    font-family: erdana,Arial, Helvetica, sans-serif; color: #610b4b;
+
+}
+.h1, .h3{
+    font-weight: 400;
+
+}h1, h2, h3{
+    line-height: 1.3em;
+}
+
+
+/*logo managing code*/
+img {
+    max-width: 100%;
+    height: auto;
+  }
+/*marque tag styling code*/
+.blink {
+    animation: blinker 1.5s linear infinite;
+    color: red;
+    font-family: sans-serif;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+
+/*inner iamge */
+/*inner iamge */
+.newsletter{
+    background:url(image/inner\ image.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.newsletter form{
+    max-width: 45rem;
+    margin-left: auto;
+    text-align: center;
+    padding:5rem 0;
+}
+
+.newsletter form h3{
+    font-size: 2.2rem;
+    color:#fff;
+    padding-bottom: .7rem;
+    font-weight: normal;
+}
+
+.newsletter form .box{
+    width: 100%;
+    margin: .7rem 0;
+    padding:1rem 1.2rem;
+    font-size: 1.6rem;
+    color:var(--black);
+    border-radius: .5rem;
+    text-transform:none;
+}
+
+
+
+/* media queries  */
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header .header-1{
+        padding:2rem;
+    }
+
+    section{
+        padding:3rem 2rem;
+    }
+
+}
+@media (max-width:768px){
+
+    html{
+        scroll-padding-top: 0;
+    }
+
+    body{
+        padding-bottom: 6rem;
+    }
+
+    .header .header-2{
+        display:none;
+    }
+
+    .bottom-navbar{
+        display: block;
+    }
+    .search-btn{
+        display: inline-block;
+    }
+
+    .header .header-1{
+        box-shadow: var(--box-shadow);
+        position: relative;
+    }
+
+    .header .header-1 .search-form{
+        position:absolute;
+        top:-115%; right:2rem;
+        width: 90%;
+        box-shadow: var(--box-shadow);
+    }
+    .header .header-1 .search-form.active{
+        top:115%;
+    }
+    .home .row .content{
+        text-align: center;
+    }
+
+    .home .row .content h3{
+        font-size: 3.5rem;
+    }
+
+    .newsletter{
+        background-position: right;
+    }
+
+    .newsletter form{
+        margin-left:0;
+        max-width: 100%;
+    }
+
+}
+@media (max-width:450px){
+
+    html{
+        font-size:50%;
+}
+
+}
+/* video list*/
+  .list-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-column-gap: 16px;
+    grid-row-gap: 10px;
+    margin-top: 15px;
+}
+
+.vid-list .thumbnail{
+    width: 33%;
+    border-radius: 5%;
+}
+.vid-list.flex-div{
+    align-items: flex-start;
+    margin-top: 7px;
+}
+
+
+.footerone {
+    background-color:#E04F23;
+    color:#E04F23;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+/* whatsapp feature*/
+  .whatsapp{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  ion-icon {
+    color: black;
+  }
+
+  /*courses*/
+  
+    div.gallery {
+      margin: 70px;
+      border: 10px solid #ccc;
+      float: left;
+      width: 280px;
+    }
+    /*text like java python ds coa automata electrical electronics*/
+    div.desc {
+        padding: 3px;
+        text-align: center;
+      }
+
+      @-moz-keyframes myfirst {
+      0% {
+        left: -25%;
+      }
+      100% {
+        left: 100%;
+      }
+    }
+    
+    @-webkit-keyframes myfirst {
+      0% {
+        left: -25%;
+      }
+      100% {
+        left: 100%;
+      }
+    }
+    
+    @keyframes myfirst {
+      0% {
+        left: -25%;
+      }
+      100% {
+        left: 100%;
+      }
+    }
+
+        
+    .footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align:center;
+        border-style: groove; 
+    }
+
+
+/* Optional: Style links in the footer */
+        
+    .footer a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    
+
+    /* Optional: Style links on hover */
+    .footer a:hover {
+        text-decoration: underline;
+    }
+
+    
+    /*welcome page*/
+    
+    .navigation{
+        position: relative;
+        width: 70px;
+         height: 70px;
+        background: #212532;
+         border-radius: 10px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        transition: 0.5s;
+        transition-delay: 0.8s;
+        }
+        
+        .navigation.active { 
+            width: 200px; 
+            height: 200px;
+        transition-delay: 0s;
+        }
+        .navigation span{
+         position: absolute;
+          display: flex;
+        width: 7px; 
+        height: 7px;
+        justify-content: center;
+         align-items: center;
+        background: #fff;
+         border-radius: 50%;
+        }
+
+        
